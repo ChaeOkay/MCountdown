@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0BAFC9B18D922B000D95A58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9A18D922B000D95A58 /* Foundation.framework */; };
+		E0BAFC9D18D922B000D95A58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9C18D922B000D95A58 /* CoreGraphics.framework */; };
+		E0BAFC9F18D922B000D95A58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9E18D922B000D95A58 /* UIKit.framework */; };
+		E0BAFCA518D922B000D95A58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCA318D922B000D95A58 /* InfoPlist.strings */; };
+		E0BAFCA718D922B000D95A58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCA618D922B000D95A58 /* main.m */; };
+		E0BAFCAB18D922B000D95A58 /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCAA18D922B000D95A58 /* JCAppDelegate.m */; };
+		E0BAFCAD18D922B000D95A58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCAC18D922B000D95A58 /* Images.xcassets */; };
+		E0BAFCB418D922B000D95A58 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFCB318D922B000D95A58 /* XCTest.framework */; };
+		E0BAFCB518D922B000D95A58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9A18D922B000D95A58 /* Foundation.framework */; };
+		E0BAFCB618D922B000D95A58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9E18D922B000D95A58 /* UIKit.framework */; };
+		E0BAFCBE18D922B000D95A58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCBC18D922B000D95A58 /* InfoPlist.strings */; };
+		E0BAFCC018D922B000D95A58 /* MartaCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0BAFCB718D922B000D95A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0BAFC8F18D922B000D95A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0BAFC9618D922B000D95A58;
+			remoteInfo = MartaCountdown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0BAFC9718D922B000D95A58 /* MartaCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartaCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0BAFC9A18D922B000D95A58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0BAFC9C18D922B000D95A58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0BAFC9E18D922B000D95A58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0BAFCA218D922B000D95A58 /* MartaCountdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MartaCountdown-Info.plist"; sourceTree = "<group>"; };
+		E0BAFCA418D922B000D95A58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0BAFCA618D922B000D95A58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0BAFCA818D922B000D95A58 /* MartaCountdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MartaCountdown-Prefix.pch"; sourceTree = "<group>"; };
+		E0BAFCA918D922B000D95A58 /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
+		E0BAFCAA18D922B000D95A58 /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
+		E0BAFCAC18D922B000D95A58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0BAFCB218D922B000D95A58 /* MartaCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MartaCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0BAFCB318D922B000D95A58 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0BAFCBB18D922B000D95A58 /* MartaCountdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MartaCountdownTests-Info.plist"; sourceTree = "<group>"; };
+		E0BAFCBD18D922B000D95A58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MartaCountdownTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0BAFC9418D922B000D95A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BAFC9D18D922B000D95A58 /* CoreGraphics.framework in Frameworks */,
+				E0BAFC9F18D922B000D95A58 /* UIKit.framework in Frameworks */,
+				E0BAFC9B18D922B000D95A58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BAFCAF18D922B000D95A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BAFCB418D922B000D95A58 /* XCTest.framework in Frameworks */,
+				E0BAFCB618D922B000D95A58 /* UIKit.framework in Frameworks */,
+				E0BAFCB518D922B000D95A58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0BAFC8E18D922B000D95A58 = {
+			isa = PBXGroup;
+			children = (
+				E0BAFCA018D922B000D95A58 /* MartaCountdown */,
+				E0BAFCB918D922B000D95A58 /* MartaCountdownTests */,
+				E0BAFC9918D922B000D95A58 /* Frameworks */,
+				E0BAFC9818D922B000D95A58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0BAFC9818D922B000D95A58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0BAFC9718D922B000D95A58 /* MartaCountdown.app */,
+				E0BAFCB218D922B000D95A58 /* MartaCountdownTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0BAFC9918D922B000D95A58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0BAFC9A18D922B000D95A58 /* Foundation.framework */,
+				E0BAFC9C18D922B000D95A58 /* CoreGraphics.framework */,
+				E0BAFC9E18D922B000D95A58 /* UIKit.framework */,
+				E0BAFCB318D922B000D95A58 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0BAFCA018D922B000D95A58 /* MartaCountdown */ = {
+			isa = PBXGroup;
+			children = (
+				E0BAFCA918D922B000D95A58 /* JCAppDelegate.h */,
+				E0BAFCAA18D922B000D95A58 /* JCAppDelegate.m */,
+				E0BAFCAC18D922B000D95A58 /* Images.xcassets */,
+				E0BAFCA118D922B000D95A58 /* Supporting Files */,
+			);
+			path = MartaCountdown;
+			sourceTree = "<group>";
+		};
+		E0BAFCA118D922B000D95A58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0BAFCA218D922B000D95A58 /* MartaCountdown-Info.plist */,
+				E0BAFCA318D922B000D95A58 /* InfoPlist.strings */,
+				E0BAFCA618D922B000D95A58 /* main.m */,
+				E0BAFCA818D922B000D95A58 /* MartaCountdown-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0BAFCB918D922B000D95A58 /* MartaCountdownTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */,
+				E0BAFCBA18D922B000D95A58 /* Supporting Files */,
+			);
+			path = MartaCountdownTests;
+			sourceTree = "<group>";
+		};
+		E0BAFCBA18D922B000D95A58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0BAFCBB18D922B000D95A58 /* MartaCountdownTests-Info.plist */,
+				E0BAFCBC18D922B000D95A58 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0BAFC9618D922B000D95A58 /* MartaCountdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BAFCC318D922B000D95A58 /* Build configuration list for PBXNativeTarget "MartaCountdown" */;
+			buildPhases = (
+				E0BAFC9318D922B000D95A58 /* Sources */,
+				E0BAFC9418D922B000D95A58 /* Frameworks */,
+				E0BAFC9518D922B000D95A58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MartaCountdown;
+			productName = MartaCountdown;
+			productReference = E0BAFC9718D922B000D95A58 /* MartaCountdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0BAFCB118D922B000D95A58 /* MartaCountdownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BAFCC618D922B000D95A58 /* Build configuration list for PBXNativeTarget "MartaCountdownTests" */;
+			buildPhases = (
+				E0BAFCAE18D922B000D95A58 /* Sources */,
+				E0BAFCAF18D922B000D95A58 /* Frameworks */,
+				E0BAFCB018D922B000D95A58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0BAFCB818D922B000D95A58 /* PBXTargetDependency */,
+			);
+			name = MartaCountdownTests;
+			productName = MartaCountdownTests;
+			productReference = E0BAFCB218D922B000D95A58 /* MartaCountdownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0BAFC8F18D922B000D95A58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ChaeOkay;
+				TargetAttributes = {
+					E0BAFCB118D922B000D95A58 = {
+						TestTargetID = E0BAFC9618D922B000D95A58;
+					};
+				};
+			};
+			buildConfigurationList = E0BAFC9218D922B000D95A58 /* Build configuration list for PBXProject "MartaCountdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0BAFC8E18D922B000D95A58;
+			productRefGroup = E0BAFC9818D922B000D95A58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0BAFC9618D922B000D95A58 /* MartaCountdown */,
+				E0BAFCB118D922B000D95A58 /* MartaCountdownTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0BAFC9518D922B000D95A58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BAFCA518D922B000D95A58 /* InfoPlist.strings in Resources */,
+				E0BAFCAD18D922B000D95A58 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BAFCB018D922B000D95A58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BAFCBE18D922B000D95A58 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0BAFC9318D922B000D95A58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BAFCA718D922B000D95A58 /* main.m in Sources */,
+				E0BAFCAB18D922B000D95A58 /* JCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BAFCAE18D922B000D95A58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BAFCC018D922B000D95A58 /* MartaCountdownTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0BAFCB818D922B000D95A58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0BAFC9618D922B000D95A58 /* MartaCountdown */;
+			targetProxy = E0BAFCB718D922B000D95A58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0BAFCA318D922B000D95A58 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0BAFCA418D922B000D95A58 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0BAFCBC18D922B000D95A58 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0BAFCBD18D922B000D95A58 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0BAFCC118D922B000D95A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0BAFCC218D922B000D95A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0BAFCC418D922B000D95A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MartaCountdown/MartaCountdown-Prefix.pch";
+				INFOPLIST_FILE = "MartaCountdown/MartaCountdown-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0BAFCC518D922B000D95A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MartaCountdown/MartaCountdown-Prefix.pch";
+				INFOPLIST_FILE = "MartaCountdown/MartaCountdown-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0BAFCC718D922B000D95A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MartaCountdown.app/MartaCountdown";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MartaCountdown/MartaCountdown-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MartaCountdownTests/MartaCountdownTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0BAFCC818D922B000D95A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MartaCountdown.app/MartaCountdown";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MartaCountdown/MartaCountdown-Prefix.pch";
+				INFOPLIST_FILE = "MartaCountdownTests/MartaCountdownTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0BAFC9218D922B000D95A58 /* Build configuration list for PBXProject "MartaCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BAFCC118D922B000D95A58 /* Debug */,
+				E0BAFCC218D922B000D95A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0BAFCC318D922B000D95A58 /* Build configuration list for PBXNativeTarget "MartaCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BAFCC418D922B000D95A58 /* Debug */,
+				E0BAFCC518D922B000D95A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0BAFCC618D922B000D95A58 /* Build configuration list for PBXNativeTarget "MartaCountdownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BAFCC718D922B000D95A58 /* Debug */,
+				E0BAFCC818D922B000D95A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0BAFC8F18D922B000D95A58 /* Project object */;
+}
