@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    JCAppViewController *stationsController = [[JCAppViewController alloc] initWithNibName:@"AppView" bundle:nil];
+    JCAppViewController *stationsController = [JCAppViewController new];
 
     self.window.rootViewController = stationsController;
 
