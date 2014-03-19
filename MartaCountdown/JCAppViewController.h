@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JCStationsViewController : UIViewController
+@interface JCAppViewController : UIViewController
 
 @end

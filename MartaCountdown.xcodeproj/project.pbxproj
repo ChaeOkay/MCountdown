@@ -20,7 +20,7 @@
 		E0BAFCBE18D922B000D95A58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCBC18D922B000D95A58 /* InfoPlist.strings */; };
 		E0BAFCC018D922B000D95A58 /* MartaCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */; };
 		E0BAFCCA18D9242000D95A58 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCC918D9242000D95A58 /* AppView.xib */; };
-		E0BAFCCD18D9256D00D95A58 /* JCStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */; };
+		E0BAFCCD18D9256D00D95A58 /* JCAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */; };
 		E0BAFCCF18D9284D00D95A58 /* StationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCCE18D9284D00D95A58 /* StationView.xib */; };
 		E0BAFCD218D92D9D00D95A58 /* JCStation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCD118D92D9D00D95A58 /* JCStation.m */; };
 /* End PBXBuildFile section */
@@ -53,8 +53,8 @@
 		E0BAFCBD18D922B000D95A58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MartaCountdownTests.m; sourceTree = "<group>"; };
 		E0BAFCC918D9242000D95A58 /* AppView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppView.xib; path = ../AppView.xib; sourceTree = "<group>"; };
-		E0BAFCCB18D9256D00D95A58 /* JCStationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStationsViewController.h; sourceTree = "<group>"; };
-		E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStationsViewController.m; sourceTree = "<group>"; };
+		E0BAFCCB18D9256D00D95A58 /* JCAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAppViewController.h; sourceTree = "<group>"; };
+		E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAppViewController.m; sourceTree = "<group>"; };
 		E0BAFCCE18D9284D00D95A58 /* StationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationView.xib; sourceTree = "<group>"; };
 		E0BAFCD018D92D9D00D95A58 /* JCStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStation.h; sourceTree = "<group>"; };
 		E0BAFCD118D92D9D00D95A58 /* JCStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStation.m; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 			children = (
 				E0BAFCC918D9242000D95A58 /* AppView.xib */,
 				E0BAFCCE18D9284D00D95A58 /* StationView.xib */,
-				E0BAFCCB18D9256D00D95A58 /* JCStationsViewController.h */,
-				E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */,
+				E0BAFCCB18D9256D00D95A58 /* JCAppViewController.h */,
+				E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */,
 				E0BAFCD018D92D9D00D95A58 /* JCStation.h */,
 				E0BAFCD118D92D9D00D95A58 /* JCStation.m */,
 				E0BAFCA918D922B000D95A58 /* JCAppDelegate.h */,
@@ -261,7 +261,7 @@
 				E0BAFCA718D922B000D95A58 /* main.m in Sources */,
 				E0BAFCD218D92D9D00D95A58 /* JCStation.m in Sources */,
 				E0BAFCAB18D922B000D95A58 /* JCAppDelegate.m in Sources */,
-				E0BAFCCD18D9256D00D95A58 /* JCStationsViewController.m in Sources */,
+				E0BAFCCD18D9256D00D95A58 /* JCAppViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +462,7 @@
 				E0BAFCC518D922B000D95A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0BAFCC618D922B000D95A58 /* Build configuration list for PBXNativeTarget "MartaCountdownTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +471,7 @@
 				E0BAFCC818D922B000D95A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

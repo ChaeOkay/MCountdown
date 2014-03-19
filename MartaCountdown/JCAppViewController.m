@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 ChaeOkay. All rights reserved.
 //
 
-#import "JCStationsViewController.h"
+#import "JCAppViewController.h"
 
-@interface JCStationsViewController ()
+@interface JCAppViewController ()
 
 @end
 
-@implementation JCStationsViewController
+@implementation JCAppViewController
 
 @end

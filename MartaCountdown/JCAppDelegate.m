@@ -7,7 +7,7 @@
 //
 
 #import "JCAppDelegate.h"
-#import "JCStationsViewController.h"
+#import "JCAppViewController.h"
 
 @implementation JCAppDelegate
 
@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    JCStationsViewController *stationsController = [[JCStationsViewController alloc] initWithNibName:@"AppView" bundle:nil];
+    JCAppViewController *stationsController = [[JCAppViewController alloc] initWithNibName:@"AppView" bundle:nil];
 
     self.window.rootViewController = stationsController;
 
