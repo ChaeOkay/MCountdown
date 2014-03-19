@@ -10,6 +10,8 @@
 
 @interface JCAppViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *stationsViewer;
+
 @end
 
 @implementation JCAppViewController

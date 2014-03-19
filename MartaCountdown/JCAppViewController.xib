@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCAppViewController">
             <connections>
+                <outlet property="stationsViewer" destination="tTd-Ls-gbY" id="iYk-wo-OQD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cdM-CP-BwC"/>
             </connections>
         </placeholder>
