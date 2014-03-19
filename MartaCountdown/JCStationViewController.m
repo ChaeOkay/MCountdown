@@ -28,4 +28,9 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    _stationNameLabel.text = self.station.name;
+}
+
 @end
