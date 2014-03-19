@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCStationViewController">
             <connections>
+                <outlet property="stationNameLabel" destination="Ifp-Jp-eNH" id="LDk-wM-3q7"/>
                 <outlet property="view" destination="iN0-l3-epB" id="JCW-yX-PhA"/>
             </connections>
         </placeholder>

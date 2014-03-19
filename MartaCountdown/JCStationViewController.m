@@ -8,6 +8,12 @@
 
 #import "JCStationViewController.h"
 
+@interface JCStationViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *stationNameLabel;
+
+@end
+
 @implementation JCStationViewController
 
 @end
