@@ -19,6 +19,8 @@
 		E0BAFCB618D922B000D95A58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9E18D922B000D95A58 /* UIKit.framework */; };
 		E0BAFCBE18D922B000D95A58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCBC18D922B000D95A58 /* InfoPlist.strings */; };
 		E0BAFCC018D922B000D95A58 /* MartaCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */; };
+		E0BAFCCA18D9242000D95A58 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCC918D9242000D95A58 /* AppView.xib */; };
+		E0BAFCCD18D9256D00D95A58 /* JCStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		E0BAFCBB18D922B000D95A58 /* MartaCountdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MartaCountdownTests-Info.plist"; sourceTree = "<group>"; };
 		E0BAFCBD18D922B000D95A58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MartaCountdownTests.m; sourceTree = "<group>"; };
+		E0BAFCC918D9242000D95A58 /* AppView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppView.xib; path = ../AppView.xib; sourceTree = "<group>"; };
+		E0BAFCCB18D9256D00D95A58 /* JCStationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStationsViewController.h; sourceTree = "<group>"; };
+		E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStationsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 		E0BAFCA018D922B000D95A58 /* MartaCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				E0BAFCC918D9242000D95A58 /* AppView.xib */,
+				E0BAFCCB18D9256D00D95A58 /* JCStationsViewController.h */,
+				E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */,
 				E0BAFCA918D922B000D95A58 /* JCAppDelegate.h */,
 				E0BAFCAA18D922B000D95A58 /* JCAppDelegate.m */,
 				E0BAFCAC18D922B000D95A58 /* Images.xcassets */,
@@ -220,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BAFCCA18D9242000D95A58 /* AppView.xib in Resources */,
 				E0BAFCA518D922B000D95A58 /* InfoPlist.strings in Resources */,
 				E0BAFCAD18D922B000D95A58 /* Images.xcassets in Resources */,
 			);
@@ -242,6 +251,7 @@
 			files = (
 				E0BAFCA718D922B000D95A58 /* main.m in Sources */,
 				E0BAFCAB18D922B000D95A58 /* JCAppDelegate.m in Sources */,
+				E0BAFCCD18D9256D00D95A58 /* JCStationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
