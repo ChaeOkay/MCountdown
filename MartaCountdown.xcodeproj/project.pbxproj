@@ -20,9 +20,10 @@
 		E0BAFCBE18D922B000D95A58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCBC18D922B000D95A58 /* InfoPlist.strings */; };
 		E0BAFCC018D922B000D95A58 /* MartaCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */; };
 		E0BAFCCD18D9256D00D95A58 /* JCAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */; };
-		E0BAFCCF18D9284D00D95A58 /* StationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCCE18D9284D00D95A58 /* StationView.xib */; };
 		E0BAFCD218D92D9D00D95A58 /* JCStation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCD118D92D9D00D95A58 /* JCStation.m */; };
 		E0E00E3B18D9F9AD00EA48A2 /* JCAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */; };
+		E0E00E3E18DA0B6A00EA48A2 /* JCStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */; };
+		E0E00E4018DA0BAD00EA48A2 /* JCStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E00E3F18DA0BAD00EA48A2 /* JCStationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +55,12 @@
 		E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MartaCountdownTests.m; sourceTree = "<group>"; };
 		E0BAFCCB18D9256D00D95A58 /* JCAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAppViewController.h; sourceTree = "<group>"; };
 		E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAppViewController.m; sourceTree = "<group>"; };
-		E0BAFCCE18D9284D00D95A58 /* StationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationView.xib; sourceTree = "<group>"; };
 		E0BAFCD018D92D9D00D95A58 /* JCStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStation.h; sourceTree = "<group>"; };
 		E0BAFCD118D92D9D00D95A58 /* JCStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStation.m; sourceTree = "<group>"; };
 		E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCAppViewController.xib; sourceTree = "<group>"; };
+		E0E00E3C18DA0B6A00EA48A2 /* JCStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStationViewController.h; sourceTree = "<group>"; };
+		E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStationViewController.m; sourceTree = "<group>"; };
+		E0E00E3F18DA0BAD00EA48A2 /* JCStationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCStationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +120,10 @@
 		E0BAFCA018D922B000D95A58 /* MartaCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				E0E00E3F18DA0BAD00EA48A2 /* JCStationViewController.xib */,
 				E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */,
-				E0BAFCCE18D9284D00D95A58 /* StationView.xib */,
+				E0E00E3C18DA0B6A00EA48A2 /* JCStationViewController.h */,
+				E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */,
 				E0BAFCCB18D9256D00D95A58 /* JCAppViewController.h */,
 				E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */,
 				E0BAFCD018D92D9D00D95A58 /* JCStation.h */,
@@ -236,9 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0BAFCCF18D9284D00D95A58 /* StationView.xib in Resources */,
 				E0E00E3B18D9F9AD00EA48A2 /* JCAppViewController.xib in Resources */,
 				E0BAFCA518D922B000D95A58 /* InfoPlist.strings in Resources */,
+				E0E00E4018DA0BAD00EA48A2 /* JCStationViewController.xib in Resources */,
 				E0BAFCAD18D922B000D95A58 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +265,7 @@
 			files = (
 				E0BAFCA718D922B000D95A58 /* main.m in Sources */,
 				E0BAFCD218D92D9D00D95A58 /* JCStation.m in Sources */,
+				E0E00E3E18DA0B6A00EA48A2 /* JCStationViewController.m in Sources */,
 				E0BAFCAB18D922B000D95A58 /* JCAppDelegate.m in Sources */,
 				E0BAFCCD18D9256D00D95A58 /* JCAppViewController.m in Sources */,
 			);
