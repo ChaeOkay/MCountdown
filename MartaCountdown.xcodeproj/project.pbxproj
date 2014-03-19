@@ -22,6 +22,7 @@
 		E0BAFCCA18D9242000D95A58 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCC918D9242000D95A58 /* AppView.xib */; };
 		E0BAFCCD18D9256D00D95A58 /* JCStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */; };
 		E0BAFCCF18D9284D00D95A58 /* StationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BAFCCE18D9284D00D95A58 /* StationView.xib */; };
+		E0BAFCD218D92D9D00D95A58 /* JCStation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCD118D92D9D00D95A58 /* JCStation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		E0BAFCCB18D9256D00D95A58 /* JCStationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStationsViewController.h; sourceTree = "<group>"; };
 		E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStationsViewController.m; sourceTree = "<group>"; };
 		E0BAFCCE18D9284D00D95A58 /* StationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationView.xib; sourceTree = "<group>"; };
+		E0BAFCD018D92D9D00D95A58 /* JCStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStation.h; sourceTree = "<group>"; };
+		E0BAFCD118D92D9D00D95A58 /* JCStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				E0BAFCCE18D9284D00D95A58 /* StationView.xib */,
 				E0BAFCCB18D9256D00D95A58 /* JCStationsViewController.h */,
 				E0BAFCCC18D9256D00D95A58 /* JCStationsViewController.m */,
+				E0BAFCD018D92D9D00D95A58 /* JCStation.h */,
+				E0BAFCD118D92D9D00D95A58 /* JCStation.m */,
 				E0BAFCA918D922B000D95A58 /* JCAppDelegate.h */,
 				E0BAFCAA18D922B000D95A58 /* JCAppDelegate.m */,
 				E0BAFCAC18D922B000D95A58 /* Images.xcassets */,
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0BAFCA718D922B000D95A58 /* main.m in Sources */,
+				E0BAFCD218D92D9D00D95A58 /* JCStation.m in Sources */,
 				E0BAFCAB18D922B000D95A58 /* JCAppDelegate.m in Sources */,
 				E0BAFCCD18D9256D00D95A58 /* JCStationsViewController.m in Sources */,
 			);
