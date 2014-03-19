@@ -8,6 +8,7 @@
 
 #import "JCAppViewController.h"
 #import "JCStationViewController.h"
+#import "JCStation.h"
 
 @interface JCAppViewController ()
 
@@ -26,14 +27,15 @@
     scrollFrame.size.width *= 3.0;
 
     for (int i = 0; i < 3; i++){
-        JCStationViewController *stationController = [JCStationViewController new];
+
+        JCStation *station = [[JCStation new] initWithName:[NSString stringWithFormat:@"Station %d", i]];
+        JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station];
 
         UIView *stationView = stationController.view;
 
         int x = stationView.frame.size.width * i;
 
         stationView.frame = CGRectMake(x, stationView.frame.origin.y, stationView.frame.size.width, stationView.frame.size.height);
-
         [_stationsViewer addSubview:stationController.view];
     }
     _stationsViewer.contentSize = scrollFrame.size;
