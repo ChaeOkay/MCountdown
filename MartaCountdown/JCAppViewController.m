@@ -13,6 +13,7 @@
 @interface JCAppViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *stationsViewer;
+@property (strong, nonatomic) NSMutableArray *stations;
 
 @end
 
@@ -26,9 +27,22 @@
     CGRect scrollFrame = self.view.bounds;
     scrollFrame.size.width *= 3.0;
 
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"timbuktu" ofType:@"json"];
+    NSData *stationData = [NSData dataWithContentsOfFile:path];
+    NSError *errors;
+
+    NSDictionary *stationDictionary = [NSJSONSerialization JSONObjectWithData:stationData
+                                                                      options:0
+                                                                        error:&errors];
+    [_stations addObject:stationDictionary];
+
+    NSString *stationName = [stationDictionary valueForKeyPath:@"station.name"];
+
+
     for (int i = 0; i < 3; i++){
 
-        JCStation *station = [[JCStation new] initWithName:[NSString stringWithFormat:@"Station %d", i]];
+        JCStation *station = [[JCStation new] initWithName:[NSString stringWithFormat:@"%@ %d", stationName, i]];
         JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station];
 
         UIView *stationView = stationController.view;

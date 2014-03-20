@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *stationNameLabel;
 @property (strong, nonatomic) JCStation *station;
+@property (strong, nonatomic) NSMutableDictionary *stations;
 
 @end
 

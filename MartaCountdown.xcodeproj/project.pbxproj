@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0207AE718DA46A300FBBA91 /* timbuktu.json in Resources */ = {isa = PBXBuildFile; fileRef = E0207AE618DA46A300FBBA91 /* timbuktu.json */; };
 		E0BAFC9B18D922B000D95A58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9A18D922B000D95A58 /* Foundation.framework */; };
 		E0BAFC9D18D922B000D95A58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9C18D922B000D95A58 /* CoreGraphics.framework */; };
 		E0BAFC9F18D922B000D95A58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9E18D922B000D95A58 /* UIKit.framework */; };
@@ -21,7 +22,6 @@
 		E0BAFCC018D922B000D95A58 /* MartaCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCBF18D922B000D95A58 /* MartaCountdownTests.m */; };
 		E0BAFCCD18D9256D00D95A58 /* JCAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */; };
 		E0BAFCD218D92D9D00D95A58 /* JCStation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAFCD118D92D9D00D95A58 /* JCStation.m */; };
-		E0D7580C18DA308C008FF9D0 /* timbuktu.json in Resources */ = {isa = PBXBuildFile; fileRef = E0D7580B18DA308C008FF9D0 /* timbuktu.json */; };
 		E0E00E3B18D9F9AD00EA48A2 /* JCAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */; };
 		E0E00E3E18DA0B6A00EA48A2 /* JCStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */; };
 		E0E00E4018DA0BAD00EA48A2 /* JCStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E00E3F18DA0BAD00EA48A2 /* JCStationViewController.xib */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0207AE618DA46A300FBBA91 /* timbuktu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timbuktu.json; sourceTree = "<group>"; };
 		E0BAFC9718D922B000D95A58 /* MartaCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartaCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BAFC9A18D922B000D95A58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0BAFC9C18D922B000D95A58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,7 +59,6 @@
 		E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAppViewController.m; sourceTree = "<group>"; };
 		E0BAFCD018D92D9D00D95A58 /* JCStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStation.h; sourceTree = "<group>"; };
 		E0BAFCD118D92D9D00D95A58 /* JCStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStation.m; sourceTree = "<group>"; };
-		E0D7580B18DA308C008FF9D0 /* timbuktu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timbuktu.json; sourceTree = "<group>"; };
 		E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCAppViewController.xib; sourceTree = "<group>"; };
 		E0E00E3C18DA0B6A00EA48A2 /* JCStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStationViewController.h; sourceTree = "<group>"; };
 		E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStationViewController.m; sourceTree = "<group>"; };
@@ -122,11 +122,12 @@
 		E0BAFCA018D922B000D95A58 /* MartaCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				E0207AE818DA529000FBBA91 /* fiji.json */,
+				E0207AE618DA46A300FBBA91 /* timbuktu.json */,
 				E0E00E3F18DA0BAD00EA48A2 /* JCStationViewController.xib */,
-				E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */,
 				E0E00E3C18DA0B6A00EA48A2 /* JCStationViewController.h */,
 				E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */,
-				E0D7580B18DA308C008FF9D0 /* timbuktu.json */,
+				E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */,
 				E0BAFCCB18D9256D00D95A58 /* JCAppViewController.h */,
 				E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */,
 				E0BAFCD018D92D9D00D95A58 /* JCStation.h */,
@@ -245,7 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0E00E3B18D9F9AD00EA48A2 /* JCAppViewController.xib in Resources */,
-				E0D7580C18DA308C008FF9D0 /* timbuktu.json in Resources */,
+				E0207AE718DA46A300FBBA91 /* timbuktu.json in Resources */,
 				E0BAFCA518D922B000D95A58 /* InfoPlist.strings in Resources */,
 				E0E00E4018DA0BAD00EA48A2 /* JCStationViewController.xib in Resources */,
 				E0BAFCAD18D922B000D95A58 /* Images.xcassets in Resources */,

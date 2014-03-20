@@ -1,0 +1,20 @@
+{
+  "station": {
+    "name": "Midtown",
+    "tracks": [
+      {
+      "color": "gold",
+      "destination": "OTP",
+      "directions":
+        {
+          "northbound": {
+           "weekday": ["10:15", "23:00"],
+           "saturday": ["12:05", "24:25"],
+           "sunday": ["11:45", "22:15"],
+           "holiday": ["09:15", "15:25"]
+          }
+        }
+      }
+    ]
+  }
+}
