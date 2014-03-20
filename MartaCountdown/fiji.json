@@ -1,0 +1,20 @@
+{
+  "station": {
+    "name": "Candler Park",
+    "tracks": [
+      {
+      "color": "blue",
+      "destination": "East Lake",
+      "directions":
+        {
+          "eastbound": {
+           "weekday": ["01:15", "02:00"],
+           "saturday": ["03:05", "04:25"],
+           "sunday": ["05:45", "06:15"],
+           "holiday": ["07:15", "08:25"]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E0207AE718DA46A300FBBA91 /* timbuktu.json in Resources */ = {isa = PBXBuildFile; fileRef = E0207AE618DA46A300FBBA91 /* timbuktu.json */; };
+		E0207AE918DA529000FBBA91 /* fiji.json in Resources */ = {isa = PBXBuildFile; fileRef = E0207AE818DA529000FBBA91 /* fiji.json */; };
 		E0BAFC9B18D922B000D95A58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9A18D922B000D95A58 /* Foundation.framework */; };
 		E0BAFC9D18D922B000D95A58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9C18D922B000D95A58 /* CoreGraphics.framework */; };
 		E0BAFC9F18D922B000D95A58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAFC9E18D922B000D95A58 /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		E0207AE618DA46A300FBBA91 /* timbuktu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timbuktu.json; sourceTree = "<group>"; };
+		E0207AE818DA529000FBBA91 /* fiji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fiji.json; sourceTree = "<group>"; };
 		E0BAFC9718D922B000D95A58 /* MartaCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartaCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BAFC9A18D922B000D95A58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0BAFC9C18D922B000D95A58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -248,6 +250,7 @@
 				E0E00E3B18D9F9AD00EA48A2 /* JCAppViewController.xib in Resources */,
 				E0207AE718DA46A300FBBA91 /* timbuktu.json in Resources */,
 				E0BAFCA518D922B000D95A58 /* InfoPlist.strings in Resources */,
+				E0207AE918DA529000FBBA91 /* fiji.json in Resources */,
 				E0E00E4018DA0BAD00EA48A2 /* JCStationViewController.xib in Resources */,
 				E0BAFCAD18D922B000D95A58 /* Images.xcassets in Resources */,
 			);
