@@ -10,4 +10,16 @@
 
 @implementation JCParse
 
++ (NSDictionary *) withFile:(NSString *)fileName
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"json"];
+    NSData *stationData = [NSData dataWithContentsOfFile:path];
+    NSError *errors;
+
+    NSDictionary *stationDictionary = [NSJSONSerialization JSONObjectWithData:stationData
+                                                                      options:0
+                                                                        error:&errors];
+    return stationDictionary;
+}
+
 @end

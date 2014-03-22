@@ -10,4 +10,6 @@
 
 @interface JCParse : NSObject
 
++ (NSDictionary *) withFile:(NSString *)fileName;
+
 @end

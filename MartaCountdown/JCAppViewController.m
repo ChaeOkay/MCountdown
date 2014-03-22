@@ -9,6 +9,7 @@
 #import "JCAppViewController.h"
 #import "JCStationViewController.h"
 #import "JCStation.h"
+#import "JCParse.h"
 
 @interface JCAppViewController ()
 
@@ -27,14 +28,7 @@
     CGRect scrollFrame = self.view.bounds;
     scrollFrame.size.width *= 3.0;
 
-
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"timbuktu" ofType:@"json"];
-    NSData *stationData = [NSData dataWithContentsOfFile:path];
-    NSError *errors;
-
-    NSDictionary *stationDictionary = [NSJSONSerialization JSONObjectWithData:stationData
-                                                                      options:0
-                                                                        error:&errors];
+    NSDictionary *stationDictionary = [JCParse withFile:@"timbuktu"];
     [_stations addObject:stationDictionary];
 
     NSString *stationName = [stationDictionary valueForKeyPath:@"station.name"];
