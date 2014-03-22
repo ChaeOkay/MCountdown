@@ -91,6 +91,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E090F7D618DDF262007DE78A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E0BAFCD018D92D9D00D95A58 /* JCStation.h */,
+				E0BAFCD118D92D9D00D95A58 /* JCStation.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		E090F7D718DDF269007DE78A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E0E00E3F18DA0BAD00EA48A2 /* JCStationViewController.xib */,
+				E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		E090F7D818DDF280007DE78A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0E00E3C18DA0B6A00EA48A2 /* JCStationViewController.h */,
+				E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */,
+				E0BAFCCB18D9256D00D95A58 /* JCAppViewController.h */,
+				E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		E0BAFC8E18D922B000D95A58 = {
 			isa = PBXGroup;
 			children = (
@@ -124,16 +153,9 @@
 		E0BAFCA018D922B000D95A58 /* MartaCountdown */ = {
 			isa = PBXGroup;
 			children = (
-				E0207AE818DA529000FBBA91 /* fiji.json */,
-				E0207AE618DA46A300FBBA91 /* timbuktu.json */,
-				E0E00E3F18DA0BAD00EA48A2 /* JCStationViewController.xib */,
-				E0E00E3C18DA0B6A00EA48A2 /* JCStationViewController.h */,
-				E0E00E3D18DA0B6A00EA48A2 /* JCStationViewController.m */,
-				E0E00E3A18D9F9AD00EA48A2 /* JCAppViewController.xib */,
-				E0BAFCCB18D9256D00D95A58 /* JCAppViewController.h */,
-				E0BAFCCC18D9256D00D95A58 /* JCAppViewController.m */,
-				E0BAFCD018D92D9D00D95A58 /* JCStation.h */,
-				E0BAFCD118D92D9D00D95A58 /* JCStation.m */,
+				E090F7D618DDF262007DE78A /* models */,
+				E090F7D718DDF269007DE78A /* views */,
+				E090F7D818DDF280007DE78A /* controllers */,
 				E0BAFCA918D922B000D95A58 /* JCAppDelegate.h */,
 				E0BAFCAA18D922B000D95A58 /* JCAppDelegate.m */,
 				E0BAFCAC18D922B000D95A58 /* Images.xcassets */,
@@ -145,6 +167,8 @@
 		E0BAFCA118D922B000D95A58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0207AE818DA529000FBBA91 /* fiji.json */,
+				E0207AE618DA46A300FBBA91 /* timbuktu.json */,
 				E0BAFCA218D922B000D95A58 /* MartaCountdown-Info.plist */,
 				E0BAFCA318D922B000D95A58 /* InfoPlist.strings */,
 				E0BAFCA618D922B000D95A58 /* main.m */,
