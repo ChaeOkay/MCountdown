@@ -16,9 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    JCAppViewController *stationsController = [JCAppViewController new];
+    JCAppViewController *avc = [JCAppViewController new];
 
-    self.window.rootViewController = stationsController;
+    self.window.rootViewController = avc;
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
