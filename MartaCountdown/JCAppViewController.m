@@ -15,10 +15,20 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *stationsViewer;
 @property (strong, nonatomic) NSMutableArray *stations;
+@property (strong, nonatomic) NSArray *stationFileNames;
 
 @end
 
 @implementation JCAppViewController
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _stationFileNames = @[@"timbuktu", @"fiji"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -28,24 +38,22 @@
     CGRect scrollFrame = self.view.bounds;
     scrollFrame.size.width *= 3.0;
 
-    NSDictionary *stationDictionary = [JCParse withFile:@"timbuktu"];
-    [_stations addObject:stationDictionary];
+    for (NSString *fileName in _stationFileNames)
+    {
+        NSDictionary *stationDictionary = [JCParse withFile:fileName];
+        NSString *stationName = [stationDictionary valueForKeyPath:@"station.name"];
 
-    NSString *stationName = [stationDictionary valueForKeyPath:@"station.name"];
-
-
-    for (int i = 0; i < 3; i++){
-
-        JCStation *station = [[JCStation new] initWithName:[NSString stringWithFormat:@"%@ %d", stationName, i]];
+        JCStation *station = [[JCStation new] initWithName:[NSString stringWithFormat:@"%@", stationName]];
         JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station];
 
         UIView *stationView = stationController.view;
-
-        int x = stationView.frame.size.width * i;
-
+        int index = [_stationFileNames indexOfObject:fileName];
+        CGFloat x = stationView.frame.size.width * (float)index;
         stationView.frame = CGRectMake(x, stationView.frame.origin.y, stationView.frame.size.width, stationView.frame.size.height);
+
         [_stationsViewer addSubview:stationController.view];
     }
+
     _stationsViewer.contentSize = scrollFrame.size;
 }
 
