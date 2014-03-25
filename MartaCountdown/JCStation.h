@@ -11,6 +11,6 @@
 @interface JCStation : NSObject
 
 @property (nonatomic, strong) NSString *name;
-- (instancetype)initWithName:(NSString *)name;
+- (instancetype)initWithFileName:(NSString *)name;
 
 @end

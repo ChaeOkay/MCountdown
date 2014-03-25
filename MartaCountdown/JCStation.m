@@ -7,15 +7,17 @@
 //
 
 #import "JCStation.h"
+#import "JCParse.h"
 
 @implementation JCStation
 
-- (instancetype)initWithName:(NSString *)name
+- (instancetype)initWithFileName:(NSString *)name
 {
     self = [super init];
     if (self)
     {
-        _name = name;
+        NSDictionary *stationDictionary = [JCParse withFile:name];
+        _name = [stationDictionary valueForKeyPath:@"station.name"];
     }
     return self;
 }

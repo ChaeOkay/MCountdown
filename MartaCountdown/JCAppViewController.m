@@ -40,14 +40,10 @@
 
     for (NSString *fileName in _stationFileNames)
     {
-        NSDictionary *stationDictionary = [JCParse withFile:fileName];
-        NSString *stationName = [stationDictionary valueForKeyPath:@"station.name"];
-        JCStation *station = [[JCStation new] initWithName:stationName];
-
+        JCStation *station = [[JCStation new] initWithFileName:fileName];
         float index = [_stationFileNames indexOfObject:fileName];
         JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station
                                                                                             indexView:index];
-
         [_stationsViewer addSubview:stationController.view];
     }
 
