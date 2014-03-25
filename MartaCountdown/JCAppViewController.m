@@ -36,19 +36,18 @@
     _stationsViewer.pagingEnabled = YES;
 
     CGRect scrollFrame = self.view.bounds;
-    scrollFrame.size.width *= 3.0;
+    scrollFrame.size.width *= [self.stationFileNames count];
 
     for (NSString *fileName in _stationFileNames)
     {
         NSDictionary *stationDictionary = [JCParse withFile:fileName];
         NSString *stationName = [stationDictionary valueForKeyPath:@"station.name"];
+        JCStation *station = [[JCStation new] initWithName:stationName];
 
-        JCStation *station = [[JCStation new] initWithName:[NSString stringWithFormat:@"%@", stationName]];
         JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station];
-
         UIView *stationView = stationController.view;
-        int index = [_stationFileNames indexOfObject:fileName];
-        CGFloat x = stationView.frame.size.width * (float)index;
+        float index = [_stationFileNames indexOfObject:fileName];
+        CGFloat x = stationView.frame.size.width * index;
         stationView.frame = CGRectMake(x, stationView.frame.origin.y, stationView.frame.size.width, stationView.frame.size.height);
 
         [_stationsViewer addSubview:stationController.view];
