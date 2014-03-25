@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSMutableArray *stations;
 @property (strong, nonatomic) NSArray *stationFileNames;
 - (void)loadStations;
+- (void)setStationViews;
 - (void)setScrollFrame;
 
 @end
@@ -37,6 +38,7 @@
 {
     [super viewDidLoad];
     [self loadStations];
+    [self setStationViews];
     [self setScrollFrame];
 }
 
@@ -46,6 +48,14 @@
     {
         JCStation *station = [[JCStation new] initWithFileName:fileName];
         [_stations addObject:station];
+    }
+}
+
+- (void)setStationViews
+{
+    for (JCStation *station in _stations)
+    {
+        float index = [_stations indexOfObject:station];
         JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station
                                                                                             indexView:index];
         [_stationsViewer addSubview:stationController.view];
