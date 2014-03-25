@@ -12,6 +12,6 @@
 
 @interface JCStationViewController : UIViewController
 
-- (instancetype)initWithStation:(JCStation *)station;
+- (instancetype)initWithStation:(JCStation *)station indexView:(float)index;
 
 @end

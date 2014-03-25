@@ -19,12 +19,15 @@
 
 @implementation JCStationViewController
 
-- (instancetype)initWithStation:(JCStation *)station
+- (instancetype)initWithStation:(JCStation *)station indexView:(float)index
 {
     self = [super init];
     if (self)
     {
         _station = station;
+        UIView *stationView = self.view;
+        CGFloat x = stationView.frame.size.width * (float)index;
+        stationView.frame = CGRectMake(x, stationView.frame.origin.y, stationView.frame.size.width, stationView.frame.size.height);
     }
     return self;
 }

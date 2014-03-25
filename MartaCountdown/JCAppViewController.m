@@ -44,11 +44,9 @@
         NSString *stationName = [stationDictionary valueForKeyPath:@"station.name"];
         JCStation *station = [[JCStation new] initWithName:stationName];
 
-        JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station];
-        UIView *stationView = stationController.view;
         float index = [_stationFileNames indexOfObject:fileName];
-        CGFloat x = stationView.frame.size.width * index;
-        stationView.frame = CGRectMake(x, stationView.frame.origin.y, stationView.frame.size.width, stationView.frame.size.height);
+        JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station
+                                                                                            indexView:index];
 
         [_stationsViewer addSubview:stationController.view];
     }
