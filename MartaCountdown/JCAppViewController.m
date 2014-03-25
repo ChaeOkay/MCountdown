@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *stationsViewer;
 @property (strong, nonatomic) NSMutableArray *stations;
 @property (strong, nonatomic) NSArray *stationFileNames;
+- (void)loadStations;
 
 @end
 
@@ -38,6 +39,13 @@
     CGRect scrollFrame = self.view.bounds;
     scrollFrame.size.width *= [self.stationFileNames count];
 
+    [self loadStations];
+
+    _stationsViewer.contentSize = scrollFrame.size;
+}
+
+- (void)loadStations;
+{
     for (NSString *fileName in _stationFileNames)
     {
         JCStation *station = [[JCStation new] initWithFileName:fileName];
@@ -46,8 +54,6 @@
                                                                                             indexView:index];
         [_stationsViewer addSubview:stationController.view];
     }
-
-    _stationsViewer.contentSize = scrollFrame.size;
 }
 
 @end
