@@ -28,6 +28,7 @@
     self = [super init];
     if (self) {
         _stationFileNames = @[@"timbuktu", @"fiji"];
+        _stations = [NSMutableArray new];
     }
     return self;
 }
@@ -44,7 +45,7 @@
     for (NSString *fileName in _stationFileNames)
     {
         JCStation *station = [[JCStation new] initWithFileName:fileName];
-        float index = [_stationFileNames indexOfObject:fileName];
+        [_stations addObject:station];
         JCStationViewController *stationController = [[JCStationViewController alloc] initWithStation:station
                                                                                             indexView:index];
         [_stationsViewer addSubview:stationController.view];
