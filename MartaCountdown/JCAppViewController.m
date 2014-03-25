@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSMutableArray *stations;
 @property (strong, nonatomic) NSArray *stationFileNames;
 - (void)loadStations;
+- (void)setScrollFrame;
 
 @end
 
@@ -34,17 +35,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _stationsViewer.pagingEnabled = YES;
-
-    CGRect scrollFrame = self.view.bounds;
-    scrollFrame.size.width *= [self.stationFileNames count];
-
     [self loadStations];
-
-    _stationsViewer.contentSize = scrollFrame.size;
+    [self setScrollFrame];
 }
 
-- (void)loadStations;
+- (void)loadStations
 {
     for (NSString *fileName in _stationFileNames)
     {
@@ -54,6 +49,14 @@
                                                                                             indexView:index];
         [_stationsViewer addSubview:stationController.view];
     }
+}
+
+- (void)setScrollFrame
+{
+    CGRect scrollFrame = self.view.bounds;
+    scrollFrame.size.width *= [self.stationFileNames count];
+    _stationsViewer.contentSize = scrollFrame.size;
+    _stationsViewer.pagingEnabled = YES;
 }
 
 @end
